@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.logo {
+  width: 250px;
+}
+
+.text {
+  text-transform: uppercase;
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+  padding: 20px;
+}
+.nav-black {
+  background-color: rgb(34, 31, 31);
+  min-width: 320px;
+  max-width: 400px;
+  width: 100%;
+}
+.nav-red {
+  background-color: rgb(223, 56, 23);
+  width: 95%;
+}
+.nav-white {
+  background-color: #ffffff;
+  width: 95%;
+}
+.nav.visible {
+  transform: translateX(0);
+}
+
+.nav-btn {
+  cursor: pointer;
+  font-size: 20px;
+  background-color: transparent;
+  border: none;
+}
+
+.nav-btn:focus {
+  outline: none;
+}
+
+.nav-btn:active {
+  transform: scale(0.95);
+}
+
+.open-btn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  opacity: 0.6;
+}
+
+.list {
+  list-style-type: none;
+  color: black;
+  text-transform: uppercase;
+}
+
+.list li a {
+  color: rgb(34, 31, 31);
+  font-size: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.list li {
+  margin: 20px 0;
+}
+
+.list ul {
+  list-style-type: none;
+  padding-left: 20px;
+}
